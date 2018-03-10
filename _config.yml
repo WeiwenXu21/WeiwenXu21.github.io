@@ -14,13 +14,13 @@ footer: Weiwen Xu (Jenny)
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
-  - title: WordPress blog
+  - title: wordpress
     url: https://sirjennyxu.wordpress.com/
-  - title: Github
+  - title: github
     url: https://github.com/WeiwenXu21
-  - title: LinkedIn
+  - title: linkedin
     url: https://www.linkedin.com/in/weiwen-xu-928122111/
-  - title: Instagram
+  - title: instagram
     url: https://www.instagram.com/sirjennyxu/
 # Build settings
 markdown: kramdown
