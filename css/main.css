@@ -433,9 +433,15 @@ ul li {
 	letter-spacing: 2px;
 	text-transform: uppercase;
 }
-#portfolio * {
-	z-index: 2;
+#portfolio .portfolio-item .portfolio-link img {
+	position: relative;
+	width: 100%;
+	height: auto;
+	/* z-index: -1; */
 }
+/* #portfolio * {
+	z-index: 2;
+} */
 /* ------------------------------------------------------------------------------
 	 Testimonials
 -------------------------------------------------------------------------------*/
