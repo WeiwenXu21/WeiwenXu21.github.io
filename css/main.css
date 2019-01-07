@@ -323,7 +323,7 @@ ul li {
 	width: 47%;
 	height: 100%;
   position: relative;
-  transform: translate(115%, -75%);
+  transform: translate(115%, -250%);
 }
 
 #container .text-centered h1{
@@ -398,6 +398,7 @@ ul li {
 	width: 94%;
 	margin: auto;
 	background-color: #f2f2f2;
+	padding: 0;
 }
 .services h4 {
 	font-size: 33px;
@@ -418,6 +419,7 @@ ul li {
 	margin-top: 7%;
 }
 .services-content {
+	/* margin: 50px; */
 	margin: 50px;
 }
 .services-content li a {
