@@ -26,9 +26,9 @@
     <div class="header-content clearfix"> <a class="logo" href="#">Weiwen Xu</a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
-          <li><a href="#header-slider">Home</a></li>
+          <li><a href="#container">Home</a></li>
           <li><a href="#services">My Intro</a></li>
-          <li><a href="#testimonials">My Blog</a></li>
+          <li><a href="#header-slider">My Blog</a></li>
           <li><a href="#portfolio">My Portfolio</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -38,15 +38,26 @@
   <!-- Navigation Section -->
 </section>
 <!-- Header Section -->
-<!-- Slider Section -->
-<section id="header-slider" class="section">
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <img src="images/slider/slogan.jpg" alt="">
+<!-- Header Image -->
+<div id="container">
+  <div class="row">
+    <div class="img-left">
+      <img src="images/slider/header.jpg" alt="">
+    </div>
+    <div class="text-centered">
+      <h1>Weiwen <span style="color: #e84545;">Jennifer</span> Xu</h1>
+      <p><i class="fa fa-heart pulse" style="color: #e84545;"></i> data science, programming, art and photographs</p>
+      <!-- <div class="container-fluid"> -->
+      <!-- <ul class="footer-share"> -->
+        <a href="mailto:wx37523@uga.edu" target="_blank"><i class="fa fa-envelope-o fa-2x"></i></a>
+        &nbsp<a href="https://github.com/WeiwenXu21" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+        &nbsp<a href="https://www.linkedin.com/in/weiwen-xu-928122111/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+        <!-- &nbsp<a href="callto:7063081017" target="_blank"><i class="fa fa-phone fa-2x" aria-hidden="true"></i></a> -->
+      <!-- </ul> -->
+      <!-- </div> -->
     </div>
   </div>
-</section>
-<!-- Slider Section -->
+</div>
 
 <!-- Service Section -->
 <section id="services" class="section services">
@@ -58,7 +69,8 @@
           <h5> or... call me Jenny!</h5>
           <p>I'm Artificial Intelligence student (Master's) in University of Georgia.
              I'm interested in machine learning and deep learning,
-             and data scientist or data science-related software engineer as my career goal. <a href="docs/WeiwenXu_Resume.pdf" target="_blank">Check my Resume!</a></p>
+             and data scientist or data science-related software engineer as my career goal.
+             <a href="docs/WeiwenXu_Resume.pdf" target="_blank">Check out my Resume!</a></p>
           <p>Besides that, I also love doing art like sketches and painting.
              I do photographs as well. You can check my works in my portfolio.</p>
           <p>
@@ -100,123 +112,84 @@
 </section>
 <!-- Service Section -->
 
-<!-- Testimonials section -->
-<section id="testimonials" class="section testimonials no-padding">
-  <div class="container-fluid">
-    <div class="row no-gutter">
-      <div class="flexslider">
-        <ul class="slides">
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <a href="https://github.com/WeiwenXu21/kaggle-multilabel-cls" target="_blank">
-                <h1>Kaggle Competition: inclusive images challenge</h1>
-                <p>Multi-label Image Classification</p>
-                </a>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <a href="https://github.com/WeiwenXu21/Edamame" target="_blank">
-                <h1>Web Traffic Time Series Forecasting</h1>
-                <p>Time Serise Data Analysis and Prediction</p>
-                </a>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <a href="https://github.com/WeiwenXu21/Hastings-p4" target="_blank">
-                <h1>Cilia Segmentation in Medical Videos (old, new project in progress)</h1>
-                <p>Medical Image/Video Analysis and Segmentation</p>
-                </a>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <a href="https://github.com/WeiwenXu21/Malware-Classification" target="_blank">
-                <h1>Malware Classification in NLP fashion</h1>
-                <p>Using pySpark for Big Data in Natural Language Processing as Scalable Classification</p>
-                </a>
-              </blockquote>
-            </div>
-          </li>
-          <li>
-            <div class="col-md-12">
-              <blockquote>
-                <a href="https://github.com/WeiwenXu21/Scalable-Document-Classification" target="_blank">
-                <h1>Scalable Document Classification</h1>
-                <p>Using pySpark for Big Data in Natural Language Processing as Scalable Text Classification</p>
-                </a>
-              </blockquote>
-            </div>
-          </li>
-        </ul>
+<!-- Slider Section -->
+<section id="header-slider" class="section">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active" style="background-color: #d7cec7;"> <!-- <img src="images/slider/slid1.jpg" alt="Chania"> -->
+        <div class="carousel-caption">
+          <a href="https://github.com/WeiwenXu21/kaggle-multilabel-cls" target="_blank">
+          <h3>Kaggle Competition: <br>inclusive images challenge</h3>
+          <p>Multi-label Image Classification</p></a>
+        </div>
+      </div>
+      <div class="item" style="background-color: #d7cec7;"> <!-- <img src="images/slider/slid2.jpg" alt="Chania"> -->
+        <div class="carousel-caption" >
+          <a href="https://github.com/WeiwenXu21/Edamame" target="_blank">
+          <h3>Web Traffic Time Series Forecasting</h3>
+          <p>Time Serise Data Analysis and Prediction</p>
+          </a>
+        </div>
+      </div>
+      <div class="item" style="background-color: #d7cec7;"> <!-- <img src="images/slider/slid2.jpg" alt="Chania"> -->
+        <div class="carousel-caption" >
+          <a href="https://github.com/WeiwenXu21/Hastings-p4" target="_blank">
+          <h3>Cilia Segmentation in Medical Videos <br>(old, new project in progress)</h3>
+          <p>Medical Image/Video Analysis and Segmentation</p>
+          </a>
+        </div>
+      </div>
+      <div class="item" style="background-color: #d7cec7;"> <!-- <img src="images/slider/slid2.jpg" alt="Chania"> -->
+        <div class="carousel-caption" >
+          <a href="https://github.com/WeiwenXu21/Malware-Classification" target="_blank">
+          <h3>Malware Classification in NLP fashion</h3>
+          <p>Using pySpark for Big Data in Natural Language Processing as Scalable Classification</p>
+          </a>
+        </div>
+      </div>
+      <div class="item" style="background-color: #d7cec7;"> <!-- <img src="images/slider/slid2.jpg" alt="Chania"> -->
+        <div class="carousel-caption" >
+          <a href="https://github.com/WeiwenXu21/Scalable-Document-Classification" target="_blank">
+          <h3>Scalable Document Classification</h3>
+          <p>Using pySpark for Big Data in Natural Language Processing as Scalable Text Classification</p>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span></a> <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"> <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div>
 </section>
-<!-- Testimonials section -->
+<!-- Slider Section -->
 
 <!-- portfolio grid section -->
 <section id="portfolio" class="section portfolio">
   <div class="container-fluid">
     <div class="row">
-      <div class="col-sm-6" style="padding:5">
-      <!-- <div class="col-sm-6 portfolio-item"> -->
-        <!-- <a href="https://github.com/WeiwenXu21/Malware-Classification" class="portfolio-link"> -->
-          <!-- <div class="caption">
-            <div class="caption-content">
-              <h3>Malware Classification</h3>
-            </div>
-          </div> -->
+      <div class="col-sm-6" style="padding:5px">
           <img src="images/portfolio/sf-street-art.jpg" class="img-responsive" alt="">
           <p><p>
-        <!-- </a> -->
-      <!-- </div> -->
-      <!-- <div class="col-sm-6 portfolio-item"> -->
-        <!-- <a href="https://github.com/WeiwenXu21/Scalable-Document-Classification" class="portfolio-link"> -->
-        <!-- <div class="caption">
-          <div class="caption-content">
-            <h3>Scalable Document Classification</h3>
-          </div>
-        </div> -->
         <img src="images/portfolio/sf-mission.jpg" class="img-responsive" alt="">
         <p><p>
-       <!-- </a> -->
        <img src="images/portfolio/sf-golden-bridge-2.jpg" class="img-responsive" alt="">
        <p><p>
        <img src="images/portfolio/sf-golden-bridge-close.jpg" class="img-responsive" alt="">
        <p><p>
        <img src="images/portfolio/sf-street.jpg" class="img-responsive" alt="">
       </div>
-    <!-- </div> -->
-    <div class="col-sm-6" style="padding:5">
-      <!-- <div class="col-sm-6 portfolio-item"> -->
-        <!-- <a href="https://github.com/dsp-uga/mahoney" class="portfolio-link"> -->
-        <!-- <div class="caption">
-          <div class="caption-content">
-            <h3>Distributed Neuron Segmentation</h3>
-          </div>
-        </div> -->
+    <div class="col-sm-6" style="padding:5px">
         <img src="images/portfolio/sf-street-art-2.jpg" class="img-responsive" alt=""> </a>
         <p><p>
-      <!-- </div> -->
-      <!-- <div class="col-sm-6 portfolio-item"> -->
-        <!-- <a href="https://github.com/dsp-uga/Hastings-p4" class="portfolio-link"> -->
-        <!-- <div class="caption">
-          <div class="caption-content">
-            <h3>Cilia Segmentation</h3>
-          </div>
-        </div> -->
         <img src="images/portfolio/sf-gb-scene-2.jpg" class="img-responsive" alt="">
         <p><p>
-      <!-- </a> -->
         <img src="images/portfolio/sf-gb-scene.jpg" class="img-responsive" alt="">
         <p><p>
         <img src="images/portfolio/sf-golden-bridge.jpg" class="img-responsive" alt="">
@@ -225,75 +198,19 @@
         <p><p>
         <img src="images/portfolio/sf-street-2.jpg" class="img-responsive" alt="">
         <p><p>
-      <!-- </div> -->
     </div>
-      <!-- <div class="col-sm-6 portfolio-item"> <a href="https://github.com/dsp-uga/Edamame" class="portfolio-link">
-        <div class="caption">
-          <div class="caption-content">
-            <h3>Web Traffic Forecast</h3>
-          </div>
-        </div>
-        <img src="images/portfolio/forecast.jpg" class="img-responsive" alt=""> </a>
-      </div>
-      <div class="col-sm-6 portfolio-item"> <a href="work-details.html" class="portfolio-link">
-        <div class="caption">
-          <div class="caption-content">
-            <h3>czarna kawka</h3>
-          </div>
-        </div>
-        <img src="images/portfolio/work-6.jpg" class="img-responsive" alt=""> </a>
-      </div> -->
     </div>
   </div>
   <p><a href="https://www.instagram.com/cobaltyellow_xu/" target="_blank">More</a></p>
 </section>
 <!-- portfolio grid section -->
 
+<section id="footer-img" class="section footer image">
+  <img src="images/slider/slogan.jpg"></a>
+
 <!-- footer section -->
 <footer id="contact" class="footer">
-  <div class="container-fluid">
-    <div class="col-md-2 left">
-      <!-- <h4>Office Location</h4>
-      <p> Collins Street West Victoria 8007 Australia.</p> -->
-      <!-- display:flex;  justify-content: center; align-items: center  -->
-    </div>
-    <div class="col-md-2 left">
-      <h4>Contact</h4>
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col col-md-3">
-            <p>Call:</p>
-          </div>
-          <div class="col col-md-11">
-            <p><a herf="callto:7063081017">(706)308-1017 (US)</a></p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col col-md-3">
-            <p>Email:</p>
-          </div>
-          <div class="col col-md-11">
-            <p><a href="mailto:wx37523@uga.edu"> wx37523@uga.com </a></p>
-            <p><a href="mailto:jzjenny11@gmail.com"> jzjenny11@gmail.com </a></p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-md-2 left">
-      <h4>Social presense</h4>
-      <div class="container-fluid">
-        <ul class="footer-share">
-          <li><a href="https://www.linkedin.com/in/weiwen-xu-928122111/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-          <li><a href="https://www.instagram.com/cobaltyellow_xu/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="col-md-6 right">
-      <p>© 2015 All rights reserved. All Rights Reserved<br>
-        Made with <i class="fa fa-heart pulse"></i> by <a href="http://www.designstub.com/" target="_blank">Designstub</a>
-      <br>Modified by <a href="https://github.com/WeiwenXu21/WeiwenXu21.github.io" target="_blank">WeiwenXu</a></p>
-    </div>
-  </div>
+  <p>Copyright © 2019 Weiwen Xu All rights reserved. Template by <a href="http://www.designstub.com/" target="_blank">Designstub</a>.
 </footer>
 <!-- footer section -->
 
