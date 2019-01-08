@@ -307,7 +307,7 @@ ul li {
 #container-col-left {
 	 /* style="height: 100%; margin:auto;" */
 	position: absolute;
-	width: 100%;
+	width: 94%;
 	height: 800px;
 	margin: auto;
 	padding: 0;
@@ -317,7 +317,7 @@ ul li {
 #container-col-right {
 	position: absolute;
 	height: 700px;
-	width: 100%;
+	width: 94%;
 	margin: auto;
 	padding: 0;
 	text-align: center;
